@@ -1,3 +1,11 @@
+body{
+    /* width: 1310px; */
+    box-sizing: border-box;
+    margin: 0 ;
+    padding: 0;
+    border: 1px solid red;
+    font-family: 'Poppins', sans-serif;
+}
 header {
     margin: 75px 120px 100px;
 }
@@ -70,14 +78,19 @@ header {
     color: white;
 }
 .profile{
-    border: 2px solid #ece2e2af;
-    border-radius: 50%;
+    /* border: 2px solid #ece2e2af;
+    border-radius: 50%; */
+    background-image: url("../images/Circle-design.svg");
+    width: 470px;
+    height: 470px;
+    padding: 30px;
+    
+
     
 }
 .profile img{
-    width: 440px;
-    height: 440px;
-    padding: 30px 30px 30px 0;
+    width: 430px;
+    height: 430px;
 }
 /* company name list style  */
 
@@ -94,4 +107,67 @@ header {
     margin: 0 auto 100px;
     border-top: 2px solid #ece7e7d7;
     border-bottom: 2px solid #ece7e7d7;
+}
+/* popular collections style  */
+.collection-blog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.collection-title{
+    font-size: 28px;
+    font-weight: 600;
+    padding-bottom: 25px;
+    color: #3A3A3A;
+}
+.collections{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 1047px;
+    grid-column-gap: 30px;
+    background-color: #dfdfdf9a;
+    grid-row-gap: 30px;
+    padding-top: 5px;
+
+}
+.collection-item{
+    background-color: #fff;
+    padding: 17px 14px;
+    border-radius: 5px;
+}
+.collection-img >img{
+    width: 300px;
+    height: 255px;
+}
+.collection-img{
+    padding-bottom: 16px;
+    margin: 0;
+    padding: 0;
+
+}
+.collection-name{
+    padding-top: 16px;
+    font-size: 28px;
+    font-weight: 500;
+    color: #18191F;
+    margin: 0;
+}
+.price{
+    font-size: 24px;
+    margin: 0;
+    padding-top: 6px;
+    font-weight: 400;
+}
+.rating{
+    margin: 0;
+    padding-top: 8px;
+    color: #FB8200;
+    font-size: 16px;
+}
+.description{
+    font-size: 14px;
+    color: #787885;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.2em;
 }
